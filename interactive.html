@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <title>Interactive Tools</title>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar"> 
+      <div class="logo">Physics</div>
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="concept.html">Concepts</a></li>
+          <li><a href="interactive.html">Interactive tools</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 class="page-title">Interactive Practice Tools</h1>
+
+    <div class="card">
+      <h2>Wave Speed Calculator</h2>
+      <p>Enter any <strong>two</strong> known values below to calculate the missing third value automatically.</p>
+      
+      <div class="calc-box">
+        <p class="field-title">Wave Speed (v) [m/s]:</p>
+        <input type="number" id="v" placeholder="e.g. 300" step="any">
+
+        <p class="field-title">Frequency (f) [Hz]:</p>
+        <input type="number" id="f" placeholder="e.g. 50" step="any">
+
+        <p class="field-title">Wavelength (λ) [m]:</p>
+        <input type="number" id="w" placeholder="e.g. 6" step="any">
+
+        <button type="button" id="calc-btn" class="cta-btn">Calculate</button>
+        <button type="button" id="clear-btn" class="button">Clear Fields</button>
+      </div>
+
+      <p id="result"></p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -4,7 +4,138 @@
 /* adc178 */
 /* a98467 */
 /* 6c584c */
-body{
-  background-color: #f0ead2;
-  
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0ead2;
+    color: #6c584c;
 }
+header {
+    background-color: #a98467;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    font-size: 20px;
+}
+
+.logo {
+    color: #f0ead2;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar a {
+    color: #f0ead2;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    padding:10px;
+}
+
+.navbar a:hover {
+    background-color: #adc178;
+    color: #6c584c;
+}
+
+h1 {
+    margin: 2rem;
+    color: #6c584c;
+}
+/* Pt2 */
+.container {
+    max-width:800px;
+    margin:auto;
+    text-align: center;
+}
+
+.page-title {
+    color: #6c584c;
+}
+
+.concept-card {
+    background-color: #f0ead2;
+    border: 2px solid #6c584c;
+    margin:30px;
+    border-radius: 20px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+}
+
+.concept-card h2 {
+    color: #87975c;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.concept-card p {
+    color: #6c584c;
+    line-height: 1.6;
+}
+
+.cta-btn {
+    display: inline-block; /* Enables vertical margins */
+    margin-top: 45px;
+    margin-bottom: 25px;
+    background-color: #adc178;
+    text-decoration: none;
+    color:#fdf6f1;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 20px;
+    transition-duration: 0.2s;
+}
+
+.cta-btn:hover {
+    background-color: #8a9961;
+}
+.button {
+    text-decoration: none;
+    color: #87975c;
+    font-weight: bold;
+}
+
+.button:hover {
+    color: #667245;
+}
+.card {
+    background-color: #f0ead2;
+    border: 2px solid #6c584c;
+    margin: 30px;
+    border-radius: 20px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+}
+
+.calc-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.field-title {
+    margin: 10px 0 2px 0;
+    font-weight: bold;
+    color: #6c584c;
+}
+
+.calc-box input {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #6c584c;
+    width: 200px;
+    text-align: center;
+}
+
