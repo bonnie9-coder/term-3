@@ -1,5 +1,6 @@
 document.getElementById('calc-btn').addEventListener('click', calculateWave);
 document.getElementById('clear-btn').addEventListener('click', resetCalc);
+document.getElementById('click').addEventListener('click', flashCard);
 
 function calculateWave() {
   let vText = document.getElementById('v').value;
@@ -38,4 +39,7 @@ function resetCalc() {
   document.getElementById('f').value = "";
   document.getElementById('w').value = "";
   document.getElementById('result').innerText = "";
+}
+function flashCard() {
+  
 }
