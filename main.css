@@ -138,7 +138,9 @@ h1 {
     width: 200px;
     text-align: center;
 }
-
-.answer {
-    display: none;
+.hero{
+    background-image: url(background.jpg);
+    align-items: center;
+    width: 730px;
+    height: 480px;
 }

@@ -1,6 +1,9 @@
 document.getElementById('calc-btn').addEventListener('click', calculateWave);
 document.getElementById('clear-btn').addEventListener('click', resetCalc);
-document.getElementById('click').addEventListener('click', flashCard);
+document.getElementById('answer').addEventListener('click', flashCard);
+document.getElementById('answer2').addEventListener('click', flashCard2);
+document.getElementById('answer3').addEventListener('click', flashCard3);
+
 
 function calculateWave() {
   let vText = document.getElementById('v').value;
@@ -41,5 +44,11 @@ function resetCalc() {
   document.getElementById('result').innerText = "";
 }
 function flashCard() {
-  
+  document.getElementById('answer').innerHTML = "The wavelength decreases while frequency remains constant.";
+}
+function flashCard2() {
+  document.getElementById('answer2').innerHTML = "The oscillation is perpendicular to direction of wave.";
+}
+function flashCard3() {
+  document.getElementById('answer3').innerHTML = "Region in a longitudinal wave where wave fronts are closer together.";
 }
