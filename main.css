@@ -144,3 +144,7 @@ h1 {
     width: 730px;
     height: 480px;
 }
+img{
+    float :left;
+    padding: 100px;
+}
