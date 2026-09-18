@@ -148,3 +148,22 @@ img{
     float :left;
     padding: 100px;
 }
+
+
+footer {
+  background-color: #6c584c;
+  color: #f0ead2;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  font-size: 0.85rem;
+}
+
+footer a {
+  color: #adc178;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
