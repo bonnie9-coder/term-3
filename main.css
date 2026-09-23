@@ -11,6 +11,7 @@ body {
     background-color: #f0ead2;
     color: #6c584c;
 }
+
 header {
     background-color: #a98467;
 }
@@ -166,4 +167,9 @@ footer a {
 
 footer a:hover {
   color: #ffffff;
+}
+.flash{
+    padding: 100px;
+    border-radius: 30px;
+    margin:50px;
 }
