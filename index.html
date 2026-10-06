@@ -9,14 +9,23 @@
 <body>
  <!-- nav bar--> 
   <header>
-    <nav class = "navbar"> 
-      <div class = "logo">Physics</div>
-      <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="concept.html">Concepts</a></li>
-            <li><a href="interactive.html">Interactive tools</a></li>
-        </ul>
-    </nav>
+    <nav class="navbar">
+  <div class="logo">Physics</div>
+  
+  <!-- Hamburger Toggle Icon -->
+  <div class="hamburger" id="hamburger-btn">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
+
+  <!-- Navigation Drawer Menu -->
+  <ul class="nav-menu" id="nav-menu">
+    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+    <li class="nav-item"><a href="concept.html" class="nav-link">Concepts</a></li>
+    <li class="nav-item"><a href="interactive.html" class="nav-link">Interactive Tools</a></li>
+  </ul>
+</nav>
   </header>
   <main class = "container"> 
   <!--hero section-->  
@@ -30,7 +39,7 @@
     <p>Designed for High School Year 11 Physics students (ages 14–16) preparing for topic tests and standards. 
       Use the lesson summaries on the Concepts page, then test your understanding using the live calculators and 
       active recall flashcards on the Tools page</p>
-  </main>
+  </main> 
   <footer>
   <p>&copy; 2026 Year 11 Physics Study Resource</p>
   
@@ -42,6 +51,8 @@
   <p>
     Licensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>
   </p>
+
 </footer>
+<script src="script.js" defer></script>
 </body>
 </html>

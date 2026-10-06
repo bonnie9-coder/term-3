@@ -16,12 +16,96 @@ header {
     background-color: #a98467;
 }
 
+/* --- Base Navigation Bar Layout --- */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-    font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: #6c584c; /* Earthy primary header color */
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: #f0ead2;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #adc178;
+  color: #6c584c;
+}
+
+/* Hamburger Icon (Hidden on Desktop) */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 2px 0;
+  background-color: #f0ead2;
+  transition: all 0.3s ease-in-out;
+}
+
+/* --- Mobile Viewport Layout (< 768px) --- */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block; /* Show toggle icon on mobile */
+  }
+
+  /* Hamburger to 'X' Cross Animation */
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  /* Off-Canvas Slide-Out Drawer Panel */
+  .nav-menu {
+    position: fixed;
+    left: -100%; /* Hidden off the left edge of the screen */
+    top: 60px;   /* Positioned below top nav bar */
+    flex-direction: column;
+    background-color: #6c584c;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.15);
+    padding: 1.5rem 0;
+  }
+
+  /* Active Class: Slides the drawer into view */
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 1rem 0;
+  }
 }
 
 .logo {
@@ -29,25 +113,6 @@ header {
     font-weight: bold;
 }
 
-.navbar ul {
-    list-style: none;
-    margin: 0;
-    display: flex;
-    gap: 1.5rem;
-}
-
-.navbar a {
-    color: #f0ead2;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 6px;
-    padding:10px;
-}
-
-.navbar a:hover {
-    background-color: #adc178;
-    color: #6c584c;
-}
 
 h1 {
     margin: 2rem;
