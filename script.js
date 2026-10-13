@@ -3,7 +3,7 @@ const hamburger = document.getElementById("hamburger-btn");
 const navMenu = document.getElementById("nav-menu");
 const navLinks = document.querySelectorAll(".nav-link");
 
-// 1. Toggle mobile menu drawer visibility on hamburger click
+// 1. hamburge
 hamburger.addEventListener("click", mobileMenu);
 
 function mobileMenu() {
@@ -11,7 +11,7 @@ function mobileMenu() {
   navMenu.classList.toggle("active");
 }
 
-// 2. Automatically close the off-canvas drawer when a link is clicked
+// 2. close the off-canvas drawer when clicking on the link?
 navLinks.forEach(link => link.addEventListener("click", closeMenu));
 
 function closeMenu() {
@@ -19,7 +19,7 @@ function closeMenu() {
   navMenu.classList.remove("active");
 }
 
-
+//first part
 
 document.getElementById('calc-btn').addEventListener('click', calculateWave);
 document.getElementById('clear-btn').addEventListener('click', resetCalc);

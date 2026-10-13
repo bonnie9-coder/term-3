@@ -20,6 +20,7 @@ header {
 .navbar {
   display: flex;
   justify-content: space-between;
+  /* pushes the logo and the menu on opposite sides */
   align-items: center;
   padding: 1rem 1.5rem;
   background-color: #6c584c; /* Earthy primary header color */
@@ -27,10 +28,6 @@ header {
 
 .nav-menu {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1.5rem;
-  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -49,10 +46,11 @@ header {
   color: #6c584c;
 }
 
+
 /* Hamburger Icon (Hidden on Desktop) */
 .hamburger {
   display: none;
-  cursor: pointer;
+  justify-content: space-around;
   flex-direction: column;
   gap: 5px;
 }
@@ -63,25 +61,27 @@ header {
   height: 3px;
   margin: 2px 0;
   background-color: #f0ead2;
-  transition: all 0.3s ease-in-out;
+  transition: all ease-in-out 0.2s;
 }
 
-/* --- Mobile Viewport Layout (< 768px) --- */
-@media screen and (max-width: 768px) {
+/* --- mobile screen --- */
+@media screen and (max-width: 767px) {
   .hamburger {
     display: block; /* Show toggle icon on mobile */
   }
 
-  /* Hamburger to 'X' Cross Animation */
+  /* Hamburger to 'X' */
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
-  }
+  }  /* hides second bar */
   .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+ /* rotates bars 1 and 3 */
+
 
   /* Off-Canvas Slide-Out Drawer Panel */
   .nav-menu {
@@ -96,15 +96,15 @@ header {
     transition: 0.3s ease-in-out;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.15);
     padding: 1.5rem 0;
+    gap:30px;
   }
 
-  /* Active Class: Slides the drawer into view */
   .nav-menu.active {
     left: 0;
   }
 
   .nav-item {
-    margin: 1rem 0;
+    margin: 2rem;
   }
 }
 
@@ -115,7 +115,7 @@ header {
 
 
 h1 {
-    margin: 2rem;
+    margin: 4rem;
     color: #6c584c;
 }
 /* Pt2 */
@@ -207,8 +207,9 @@ h1 {
 .hero{
     background-image: url(background.jpg);
     align-items: center;
-    width: 730px;
-    height: 480px;
+    padding-top:50px;
+    width: 100%;
+    height: 380px;
 }
 img{
     float :left;
