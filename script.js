@@ -23,9 +23,7 @@ function closeMenu() {
 
 document.getElementById('calc-btn').addEventListener('click', calculateWave);
 document.getElementById('clear-btn').addEventListener('click', resetCalc);
-document.getElementById('answer').addEventListener('click', flashCard);
-document.getElementById('answer2').addEventListener('click', flashCard2);
-document.getElementById('answer3').addEventListener('click', flashCard3);
+
 
 
 function calculateWave() {
@@ -66,42 +64,8 @@ function resetCalc() {
   document.getElementById('w').value = "";
   document.getElementById('result').innerText = "";
 }
-function flashCard() {
-  document.getElementById('answer').innerHTML = "The wavelength decreases while frequency remains constant.";
-}
-function flashCard2() {
-  document.getElementById('answer2').innerHTML = "The oscillation is perpendicular to direction of wave.";
-}
-function flashCard3() {
-  document.getElementById('answer3').innerHTML = "Region in a longitudinal wave where wave fronts are closer together.";
-}
 
-// attempt
-const flashcards = [
-  { question: "What happens to wavelength when light slows down during refraction?",answer: "The wavelength decreases while frequency remains constant."
-},
-  { question: "Transverse wave?", answer: "The oscillation is perpendicular to direction of wave."},
-  {question: "What is meant by compression?", answer:"Region in a longitudinal wave where wave fronts are closer together."},
-];
 
-const container = document.getElementById("flashcard-container");
-
-flashcards.forEach((card,index) => {
-  const cardDiv = document.createElement("div");
-  cardDiv.classList.add("card");
-
-  cardDiv.innerHTML = `
-  <div class = "card-nner">
-    <div class ="card-front>${card.question} </div>
-    <div class = "card-back">${card.answer}</div>
-    </div>
-    `;
-
-  cardDiv.addEventListener("click",() => {
-    cardDiv.classList.toggle("flipped");
-  });
-  container.appendChild(cardDiv);
-})
 
 
 

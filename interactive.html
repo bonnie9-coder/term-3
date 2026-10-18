@@ -53,30 +53,44 @@
     </div>
 
   
-    <!-- Click to reveal -->
-    <button onclick = "flashCard()" class = "flash">What happens to wavelength when light slows down during refraction?</button>
-    <p id = "answer"></p>
-
-    <button onclick = "flashCard2()" class = "flash">Transverse wave?</button>
-    <p id = "answer2"></p>
-
-    <button onclick = "flashCard3()" class = "flash">What is meant by compression? </button>
-    <p id = "answer3"></p>
-<!-- Click to reveal -->
+    <!-- flashcard -->
+    <div id="flashcard-container" class="flashcard-grid">
+      <!-- Card 1 -->
+      <div class="flashcard" onclick="this.classList.toggle('flipped')">
+        <div class="card-inner">
+          <div class="card-front">What happens to wavelength when light slows down during refraction?</div>
+          <div class="card-back">The wavelength decreases while frequency remains constant.</div>
+        </div>
+      </div>
+<!-- card 2 -->
+      <div class = "flashcard" onclick = "this.classList.toggle('flipped')">
+        <div class ="card-inner">
+          <div class = "card-front">What is a Transverse wave?</div>
+          <div class="card-back">The oscillation is perpendicular to direction of wave.</div>
+        </div>
+      </div>
+<!-- card 3-->
+ <div class ="flashcard" onclick = "this.classList.toggle('flipped')">
+  <div class = "card-inner">
+    <div class = "card-front">What is meant by compression?</div>
+    <div class ="card-back">Region in a longitudinal wave where wave fronts are closer together.</div>
+  </div>
+ </div>
     </main>
 
   <script src="script.js"></script>
-  <footer>
+ <footer>
   <p>&copy; 2026 Year 11 Physics Study Resource</p>
   
   <p>
-    Background by <a href="https://www.freepik.com" target="_blank">Freepik</a> | 
-    Formula Triangle via <a href="https://i.pinimg.com/236x/67/91/38/679138f4fbce82dc8eb1246825299b35.jpg" target="_blank">Pinterest</a>
+    Background by <a href="https://www.magnific.com" target="_blank">Magnific</a> | 
+    Meme via <a href="https://i.pinimg.com/236x/67/91/38/679138f4fbce82dc8eb1246825299b35.jpg" target="_blank">Pinterest</a>
   </p>
 
   <p>
     Licensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>
   </p>
+
 </footer>
 </body>
 </html>
