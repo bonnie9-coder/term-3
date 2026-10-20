@@ -310,7 +310,8 @@ footer a:hover {
 ul, li {
   list-style: none; /* getting rid of the bullet point... */
 }
-  /* --- concept page --- */
+  
+/* --- concept page --- */
 .concept-flex {
   display: flex;
   align-items: center;
@@ -329,14 +330,14 @@ ul, li {
 }
 
 .meme{
-  padding-left: 100px;
+  padding: 70px;
   padding-top:30px;
   float:left;
 }
 @media screen and (max-width: 767px) {
   .meme{
     float:none;
-  }
+  } /* --- note still used float for tge meme but used flex for the new images --- */
   .concept-flex {
     flex-direction: column;
     text-align: center;
@@ -346,3 +347,4 @@ ul, li {
     width: 100%;     
     max-width: 300px;
   }
+}
