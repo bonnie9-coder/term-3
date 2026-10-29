@@ -11,7 +11,10 @@ body {
     background-color: #f0ead2;
     color: #6c584c;
 }
-
+.logo{
+  padding-left:10px;
+  border-radius: 2px;
+}
 header {
     background-color: #a98467;
 }
