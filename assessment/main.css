@@ -320,11 +320,11 @@ ul, li {
 }
 
 .concept-img {
+  display:flex;
   width: 250px;     
   height: auto;     
   border-radius: 10px;
 }
-
 .concept-text {
   flex: 1;           
 }
