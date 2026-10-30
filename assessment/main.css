@@ -19,14 +19,14 @@ header {
     background-color: #a98467;
 }
 
-/* --- Base Navigation Bar Layout --- */
+/* --- laying out main nav--- */
 .navbar {
   display: flex;
   justify-content: space-between;
   /* pushes the logo and the menu on opposite sides */
   align-items: center;
   padding: 1rem 1.5rem;
-  background-color: #6c584c; /* Earthy primary header color */
+  background-color: #6c584c; 
 }
 
 .nav-menu {
@@ -50,7 +50,6 @@ header {
 }
 
 
-/* Hamburger Icon (Hidden on Desktop) */
 .hamburger {
   display: none;
   justify-content: space-around;
@@ -70,7 +69,7 @@ header {
 /* --- mobile screen --- */
 @media screen and (max-width: 767px) {
   .hamburger {
-    display: block; /* Show toggle icon on mobile */
+    display: block; /* show toggle icon on mobile */
   }
 
   /* Hamburger to 'X' */
@@ -86,7 +85,7 @@ header {
  /* rotates bars 1 and 3 */
 
 
-  /* Off-Canvas Slide-Out Drawer Panel */
+  /* slide out panel */
   .nav-menu {
     position: fixed;
     left: -100%; /* Hidden off the left edge of the screen */
@@ -340,7 +339,7 @@ ul, li {
 @media screen and (max-width: 767px) {
   .meme{
     float:none;
-  } /* --- note still used float for tge meme but used flex for the new images --- */
+  } /* --- note, still used float for tge meme but used flex for the new images --- */
   .concept-flex {
     flex-direction: column;
     text-align: center;
